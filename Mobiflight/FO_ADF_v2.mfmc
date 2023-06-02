@@ -8,6 +8,6 @@
   <Encoder Name="FO_ADF_IN_ENC" PinLeft="4" PinRight="5" EncoderType="2" />
   <Button Name="FO_ADF_TFR" Pin="16" />
   <Output Name="FO_ADF_BLIGHT" Pin="11" />
-  <Button Name="FO_ADF_ADF_ANT" Pin="18" />
-  <Button Name="FO_ADF_TONE" Pin="19" />
+  <Button Name="FO_ADF_ADF_ANT" Pin="19" />
+  <Button Name="FO_ADF_TONE" Pin="18" />
 </Config>
