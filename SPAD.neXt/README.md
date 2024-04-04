@@ -1,8 +1,8 @@
 # ADF Radio Module
 
-# BaudRate is 9600.
+- BaudRate is 9600.
 
-# Internal devices features
+Internal devices features
 
 - Backlight brightness level setting by pressing TFR and turning outter encoder
 - Display brightness level setting by pressing TFR and turning inner encoder
