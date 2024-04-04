@@ -1,5 +1,10 @@
 # ADF Radio Module
 
+// Internal devices features
+// - Backlight brightness level setting by pressing TFR and turning outter encoder
+// - Display brightness level setting by pressing TFR and turning inner encoder
+// - Soft reset by pressing TFR + Encoder Push
+
 How to upload Firmware to the Core Flight Tech. B737 ADF?
 
 Please be careful while uploading. 
