@@ -2,6 +2,8 @@
 
 *** WARNING: SPAD BaudRate is <b>9600</b> for this firmware ***
 
+*** 2024-07-23 R20 release for SPAD 0.9.18.4+ CFT_737_ADF_SPAD_1L2P_R20_9600.ino.hex ***
+
 *** Online SPAD complete device snippet is <b>#10857</b> (Core Flight Technologies 737 ADF PANEL for PMDG 737) ***
 
 *** Internal devices features ***
