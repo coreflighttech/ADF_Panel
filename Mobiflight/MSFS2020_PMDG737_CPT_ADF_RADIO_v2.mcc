@@ -11,7 +11,7 @@
           <transformation active="True" expression="$*10" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Display Module" serial="CoreFlightTech ADF (CPT)/ SN-948-5B7" trigger="normal" ledAddress="CPT_ADF_ACTIVE" ledConnector="1" ledModuleSize="8" ledPadding="False" ledPaddingChar="0" ledDigits="0,1,2,3" ledDecimalPoints="1" />
+        <display type="Display Module" serial="CoreFlightTech ADF (CPT)/ SN-0GB-805" trigger="normal" ledAddress="CPT_ADF_ACTIVE" ledConnector="1" ledModuleSize="8" ledPadding="False" ledPaddingChar="0" ledDigits="0,1,2,3" ledDecimalPoints="1" />
         <preconditions />
         <configrefs />
       </settings>
@@ -26,7 +26,7 @@
           <transformation active="False" expression="$" />
           <comparison active="False" value="" operand="=" ifValue="1" elseValue="0" />
         </modifiers>
-        <display type="Display Module" serial="CoreFlightTech ADF (CPT)/ SN-948-5B7" trigger="normal" ledAddress="CPT_ADF_STANDBY" ledConnector="1" ledModuleSize="8" ledPadding="False" ledPaddingChar="0" ledDigits="0,1,2,3" ledDecimalPoints="1" />
+        <display type="Display Module" serial="CoreFlightTech ADF (CPT)/ SN-0GB-805" trigger="normal" ledAddress="CPT_ADF_STANDBY" ledConnector="1" ledModuleSize="8" ledPadding="False" ledPaddingChar="0" ledDigits="0,1,2,3" ledDecimalPoints="1" />
         <preconditions />
         <configrefs />
       </settings>
@@ -45,7 +45,7 @@
             <value x="1" y="255" />
           </interpolation>
         </modifiers>
-        <display type="Output" serial="CoreFlightTech ADF (CPT)/ SN-948-5B7" trigger="normal" pin="CPT_ADF_BLIGHT" pinBrightness="255" pinPwm="True" />
+        <display type="Output" serial="CoreFlightTech ADF (CPT)/ SN-0GB-805" trigger="normal" pin="CPT_ADF_BLIGHT" pinBrightness="255" pinPwm="True" />
         <preconditions />
         <configrefs />
       </settings>
@@ -55,7 +55,7 @@
     <config guid="7253e98f-337d-43c5-9f4b-894eb0aa77f8">
       <active>true</active>
       <description>MSFS2020_PMDG737_CPT_ADF INNER ENC</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="CoreFlightTech ADF (CPT)/ SN-948-5B7" name="CPT_ADF_IN_ENC" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="CoreFlightTech ADF (CPT)/ SN-0GB-805" name="CPT_ADF_IN_ENC" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020CustomInputAction" command="82207 (&gt;K:ROTOR_BRAKE)" presetId="4bbd676b-8d9a-4afb-897e-f4891eaa66c8" />
           <onLeftFast />
@@ -69,7 +69,7 @@
     <config guid="0234c9c0-9fd9-49bb-ba9e-5ceb8be07e91">
       <active>true</active>
       <description>MSFS2020_PMDG737_CPT_ADF OUTER ENC</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="CoreFlightTech ADF (CPT)/ SN-948-5B7" name="CPT_ADF_OUT_ENC" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="CoreFlightTech ADF (CPT)/ SN-0GB-805" name="CPT_ADF_OUT_ENC" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020CustomInputAction" command="82308 (&gt;K:ROTOR_BRAKE)" presetId="7d7e129d-7c85-4392-a218-c64f03e6f3b1" />
           <onLeftFast />
@@ -83,7 +83,7 @@
     <config guid="857c0b91-ce7b-4380-bc39-afd325ae3e60">
       <active>true</active>
       <description>MSFS2020_PMDG737_CPT_ADF TFR</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="CoreFlightTech ADF (CPT)/ SN-948-5B7" name="CPT_ADF_TFR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="CoreFlightTech ADF (CPT)/ SN-0GB-805" name="CPT_ADF_TFR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="82701 (&gt;K:ROTOR_BRAKE)" presetId="291d396f-a4e9-4176-9aba-d824ec5189d9" />
         </button>
@@ -94,10 +94,10 @@
     <config guid="684b4d22-98f2-47a8-aa10-f10c4586c23f">
       <active>true</active>
       <description>MSFS2020_PMDG737_CPT_ADF TONE ON/OFF SWITCH</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="CoreFlightTech ADF (CPT)/ SN-948-5B7" name="CPT_ADF_TONE" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="CoreFlightTech ADF (CPT)/ SN-0GB-805" name="CPT_ADF_TONE" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020CustomInputAction" command="74801 (&gt;K:ROTOR_BRAKE)" presetId="8dd18d90-bdbe-4c33-8181-6af69b8a3044" />
-          <onRelease type="MSFS2020CustomInputAction" command="74801 (&gt;K:ROTOR_BRAKE)" presetId="-" />
+          <onPress type="MSFS2020CustomInputAction" command="0 '70450' (&gt;F:KeyEvent)" presetId="ca4a0496-66fc-4bba-85fb-d0896430ad48" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 '70450' (&gt;F:KeyEvent)" presetId="ca4a0496-66fc-4bba-85fb-d0896430ad48" />
         </button>
         <preconditions />
         <configrefs />
@@ -106,10 +106,10 @@
     <config guid="a70ab5df-e65e-4f9f-b975-1e112e9119b2">
       <active>true</active>
       <description>MSFS2020_PMDG737_CPT_ADF ADF-ANT SWITCH</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="CoreFlightTech ADF (CPT)/ SN-948-5B7" name="CPT_ADF_ADF_ANT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="CoreFlightTech ADF (CPT)/ SN-0GB-805" name="CPT_ADF_ADF_ANT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020CustomInputAction" command="81801 (&gt;K:ROTOR_BRAKE)" presetId="ca4a0496-66fc-4bba-85fb-d0896430ad48" />
-          <onRelease type="MSFS2020CustomInputAction" command="81801 (&gt;K:ROTOR_BRAKE)" presetId="ca4a0496-66fc-4bba-85fb-d0896430ad48" />
+          <onPress type="MSFS2020CustomInputAction" command="0 '70452' (&gt;F:KeyEvent)" presetId="8dd18d90-bdbe-4c33-8181-6af69b8a3044" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 '70452' (&gt;F:KeyEvent)" presetId="8dd18d90-bdbe-4c33-8181-6af69b8a3044" />
         </button>
         <preconditions />
         <configrefs />
