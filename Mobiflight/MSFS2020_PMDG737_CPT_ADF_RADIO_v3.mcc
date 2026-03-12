@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="7ede31e0-58cd-4e4b-ac62-06b91429b2df">
+      <active>true</active>
+      <description>MSFS2020_PMDG737_CPT_ADF ACTIVE DISPLAY</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:ADF ACTIVE FREQUENCY:1,KHz) 10 *" UUID="2e699250-5034-4b3b-9f4d-a24c6a441ba2" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$*10" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="CoreFlightTech ADF (CPT)/ SN-0GB-805" trigger="normal" ledAddress="CPT_ADF_ACTIVE" ledConnector="1" ledModuleSize="8" ledPadding="True" ledPaddingChar=" " ledDigits="0,1,2,3,4" ledDecimalPoints="1" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="94a1f88b-732b-4350-aa59-7cb6034dbbfa">
+      <active>true</active>
+      <description>MSFS2020_PMDG737_CPT_ADF STANDBY DISPLAY</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="FSUIPC" offset="0x6470" offsetType="Integer" size="4" mask="0xFFFFFFFF" bcdMode="False" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="Display Module" serial="CoreFlightTech ADF (CPT)/ SN-0GB-805" trigger="normal" ledAddress="CPT_ADF_STANDBY" ledConnector="1" ledModuleSize="8" ledPadding="True" ledPaddingChar=" " ledDigits="0,1,2,3,4" ledDecimalPoints="1" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="11c7416a-e6e0-47d3-8ae3-30b4c9e5fed4">
+      <active>true</active>
+      <description>MSFS2020_PMDG737_CPT_ADF BACKLIGHT - CHECK YOUTUBE VIDEO FOR MORE SETTING</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:BL_Pedestal, number)" UUID="6cf89bcd-3f58-4ae8-812b-7702eebc6732" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="=" ifValue="1" elseValue="0" />
+          <interpolation active="True">
+            <value x="0" y="0" />
+            <value x="1" y="255" />
+          </interpolation>
+        </modifiers>
+        <display type="Output" serial="CoreFlightTech ADF (CPT)/ SN-0GB-805" trigger="normal" pin="CPT_ADF_BLIGHT" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ecf448ea-76f9-443c-9d61-6fe299f8ec4b">
+      <active>true</active>
+      <description>ADF_Inner_Mod</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="FSUIPC" offset="0x6470" offsetType="Integer" size="4" mask="0xFFFFFFFF" bcdMode="False" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="$ % 100" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0a7f39a4-a715-4862-8774-ce8c6bd1526d">
+      <active>true</active>
+      <description>ADF_Sanal_Inner</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:ADF_Sanal_Inner)" UUID="0" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e9e6c105-29ec-46ac-8e6b-ed424508c3fc">
+      <active>true</active>
+      <description>test</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="zero_val" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="42b0e3d7-7664-4b24-8d3e-f9ea8c4637a8">
+      <active>true</active>
+      <description>adf_standby</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="FSUIPC" offset="0x6470" offsetType="Integer" size="4" mask="0xFFFFFFFF" bcdMode="False" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="d9fef41c-0836-4305-b76e-cd2bd26bbb1c">
+      <active>true</active>
+      <description>MSFS2020_PMDG737_CPT_ADF INNER_MIDDLE ENC</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="CoreFlightTech ADF (CPT)/ SN-0GB-805" name="CPT_ADF_IN_ENC" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="W 17500 == W 1900 == or Q 0 == or (L:ADF_Initial_Sync) 0 == or if{ # (&gt;L:ADF_Sanal_Inner) 1 (&gt;L:ADF_Initial_Sync) }&#xA;(L:ADF_Sanal_Inner) 0 == if{ 100 (&gt;L:ADF_Sanal_Inner) }&#xA;(L:ADF_Sanal_Inner) 5 - (&gt;L:ADF_Sanal_Inner)&#xA;(L:ADF_Sanal_Inner) 95 == if{ 82308 (&gt;K:ROTOR_BRAKE) }&#xA;82208 (&gt;K:ROTOR_BRAKE)" presetId="4bbd676b-8d9a-4afb-897e-f4891eaa66c8" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="W 17500 == W 1900 == or Q 0 == or (L:ADF_Initial_Sync) 0 == or if{ # (&gt;L:ADF_Sanal_Inner) 1 (&gt;L:ADF_Initial_Sync) }&#xA;(L:ADF_Sanal_Inner) 5 + 100 % (&gt;L:ADF_Sanal_Inner)&#xA;(L:ADF_Sanal_Inner) 0 == if{ 82307 (&gt;K:ROTOR_BRAKE) }&#xA;82207 (&gt;K:ROTOR_BRAKE)" presetId="4bbd676b-8d9a-4afb-897e-f4891eaa66c8" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="ecf448ea-76f9-443c-9d61-6fe299f8ec4b" placeholder="#" testvalue="1" />
+          <configref active="True" ref="e9e6c105-29ec-46ac-8e6b-ed424508c3fc" placeholder="Q" testvalue="1" />
+          <configref active="True" ref="42b0e3d7-7664-4b24-8d3e-f9ea8c4637a8" placeholder="W" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="5941f881-5943-4291-a3e7-3d56f5dea700">
+      <active>true</active>
+      <description>Set_zero_val</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="CoreFlightTech ADF (CPT)/ SN-0GB-805" name="CPT_ADF_IN_ENC" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="VariableInputAction" varType="number" varName="zero_val" varExpression="1" />
+          <onLeftFast />
+          <onRight type="VariableInputAction" varType="number" varName="zero_val" varExpression="1" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="e9e6c105-29ec-46ac-8e6b-ed424508c3fc" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="True" ref="ecf448ea-76f9-443c-9d61-6fe299f8ec4b" placeholder="#" testvalue="1" />
+          <configref active="True" ref="e9e6c105-29ec-46ac-8e6b-ed424508c3fc" placeholder="Q" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="0234c9c0-9fd9-49bb-ba9e-5ceb8be07e91">
+      <active>true</active>
+      <description>MSFS2020_PMDG737_CPT_ADF OUTER ENC</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="CoreFlightTech ADF (CPT)/ SN-0GB-805" name="CPT_ADF_OUT_ENC" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="82408 (&gt;K:ROTOR_BRAKE) 0 (&gt;L:ADF_Initial_Sync)" presetId="aa2c2e8c-d889-4f9e-a8b1-13836c16e287" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="82407 (&gt;K:ROTOR_BRAKE) 0 (&gt;L:ADF_Initial_Sync)" presetId="8a27bad2-6414-4ed1-9efe-8e758fd291dc" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="857c0b91-ce7b-4380-bc39-afd325ae3e60">
+      <active>true</active>
+      <description>MSFS2020_PMDG737_CPT_ADF TFR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="CoreFlightTech ADF (CPT)/ SN-0GB-805" name="CPT_ADF_TFR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="82701 (&gt;K:ROTOR_BRAKE)&#xA;0 (&gt;L:ADF_Initial_Sync)" presetId="291d396f-a4e9-4176-9aba-d824ec5189d9" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="684b4d22-98f2-47a8-aa10-f10c4586c23f">
+      <active>true</active>
+      <description>MSFS2020_PMDG737_CPT_ADF TONE ON/OFF SWITCH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="CoreFlightTech ADF (CPT)/ SN-0GB-805" name="CPT_ADF_TONE" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 '70450' (&gt;F:KeyEvent)" presetId="ca4a0496-66fc-4bba-85fb-d0896430ad48" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 '70450' (&gt;F:KeyEvent)" presetId="ca4a0496-66fc-4bba-85fb-d0896430ad48" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a70ab5df-e65e-4f9f-b975-1e112e9119b2">
+      <active>true</active>
+      <description>MSFS2020_PMDG737_CPT_ADF ADF-ANT SWITCH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="CoreFlightTech ADF (CPT)/ SN-0GB-805" name="CPT_ADF_ADF_ANT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 '70452' (&gt;F:KeyEvent)" presetId="8dd18d90-bdbe-4c33-8181-6af69b8a3044" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 '70452' (&gt;F:KeyEvent)" presetId="8dd18d90-bdbe-4c33-8181-6af69b8a3044" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>
